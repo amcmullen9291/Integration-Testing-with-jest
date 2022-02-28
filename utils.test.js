@@ -1,5 +1,5 @@
 //file can also have a .spec extension
-const {generateText } = require('./util');
+const { generateText, checkAndGenerate } = require('./util');
 
 test('should output name and age', () =>{
     const text = generateText('Anthony', 42);
@@ -19,8 +19,9 @@ test('should output dataless-text', () => {
 
 
 test('should generate a valid text output', () => {
-    const text = generateText('Anthony', 42);
+    const text = checkAndGenerate('Anthony', 42);
     expect(text).toBe('Anthony (42 years old)');
 })
 //same structure as unit test, But the tested function relies on more than
 //just one source. the two parts needed to make this function working are integrated.
+

@@ -26,14 +26,11 @@ const validateInput = (text, notEmpty, isNumber) => {
 };
 
 exports.checkAndGenerate = (name, age) => {
-  if (
-    !validateInput(newUserNameInput.value, true, false) ||
-    !validateInput(newUserAgeInput.value, false, true)
-  ) {
+  if (!validateInput(name, true, false) || !validateInput(age, false, true)) {
     return false;
   }
-  return this.generateText(name, age)
-}
+  return generateText(name, age);
+};
 
 exports.generateText = generateText;
 exports.validateInput = validateInput;
