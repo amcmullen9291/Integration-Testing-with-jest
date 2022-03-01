@@ -19,7 +19,7 @@ test('should output dataless-text', () => {
 
 
 test('should generate a valid text output', () => {
-    const text = checkAndGenerate('Anthony', 42);
+    const text = checkAndGenerate('Anthony', 42); //notifce different function. integration test
     expect(text).toBe('Anthony (42 years old)');
 })
 //same structure as unit test, But the tested function relies on more than

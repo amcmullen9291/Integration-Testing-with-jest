@@ -5,3 +5,5 @@ You will have a test runner (ie mocha or jest), an assertion library to define e
 
 the "test" script  "jest --watch"  watches for changes in your app (without having to restart the server. You may have to press 'a' to start the active watching)
 
+run tests with 'npm test'
+the puppeter dapendency is a 'headless version' of the chrome browser.

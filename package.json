@@ -20,12 +20,14 @@
     "tests"
   ],
   "repository": "https://github.com/amcmullen9291/Integration-testing.git",
-  "author": "amcmullen <amcmullen9291@gmail.com>",  "license": "ISC",
+  "author": "amcmullen <amcmullen9291@gmail.com>",
+  "license": "ISC",
   "devDependencies": {
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "puppeteer": "^13.4.1"
   }
 }
