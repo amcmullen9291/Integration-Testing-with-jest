@@ -1,4 +1,5 @@
 //file can also have a .spec extension
+const puppeteer = require('puppeteer');
 const { generateText, checkAndGenerate } = require('./util');
 
 test('should output name and age', () =>{
@@ -25,3 +26,5 @@ test('should generate a valid text output', () => {
 //same structure as unit test, But the tested function relies on more than
 //just one source. the two parts needed to make this function working are integrated.
 
+//puppeteer test below (e2e testing)
+// note: ALL browser realted activites return promises
